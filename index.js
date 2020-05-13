@@ -66,7 +66,7 @@ app.post('/send', (req, res) => {
     console.log('Message sent: %s', info.messageId);
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-    res.render('portfolio', { msg: 'Email has been sent' });
+    res.render('portfolio', { msg: 'SUCCESS!! Email has been sent' });
   });
 });
 
