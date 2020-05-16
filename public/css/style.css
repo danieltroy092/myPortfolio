@@ -737,21 +737,7 @@ select {
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
-}
-
-.container .portfolio-item .imgBox {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.container .portfolio-item .imgBox img {
-  max-width: 100%;
-  transition: transform 2s;
-}
-
-.container .portfolio-item:hover .imgBox img {
-  transform: scale(1.2);
+  height: 270px;
 }
 
 .container .portfolio-item .portfolio-info {
