@@ -9,6 +9,7 @@ const app = express();
 // View engine setup
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
+app.set('port', process.env.PORT || 3000);
 
 // Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -70,5 +71,4 @@ app.post('/send', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(3000, () => console.log('Server started...'));
+app.listen(app.get('port'), () => console.log('Server started...'));
