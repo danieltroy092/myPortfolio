@@ -370,6 +370,10 @@ select {
   min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
+  background-image: url(/public/images/home.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home .intro {
@@ -382,6 +386,7 @@ select {
   border-radius: 50%;
   display: inline-block;
   border: 8px solid #ffffff;
+  background-color: #fff;
 }
 
 .home .intro h1 {
@@ -918,6 +923,10 @@ select {
 /******** DARK MODE *********/
 body.dark .section {
   background-color: #151515;
+}
+
+body.dark .home {
+  background-image: none;
 }
 
 body.dark .contact .contact-form .form-item .form-control,
