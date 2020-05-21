@@ -372,7 +372,6 @@ select {
   display: flex;
   background-image: url(/public/images/home.gif);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -797,6 +796,10 @@ select {
   white-space: nowrap;
   border: none;
   cursor: pointer;
+}
+
+.container .portfolio-item .portfolio-info .portfolio-content button a {
+  color: #fff;
 }
 
 .container .portfolio-item .portfolio-info .portfolio-content button:hover {
@@ -1506,7 +1509,13 @@ body.dark .about .about-content .timeline,
 body.dark .aside {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
-
+body.dark
+  .container
+  .portfolio-item
+  .portfolio-info
+  .portfolio-content
+  button
+  a,
 body.dark .contact .contact-info-item h4,
 body.dark .about .about-content .timeline .timeline-title,
 body.dark .about .about-content .timeline .timeline-text,
