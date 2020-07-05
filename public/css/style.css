@@ -802,6 +802,11 @@ select {
   color: #fff;
 }
 
+.container .portfolio-item .portfolio-info .portfolio-content a {
+  font-weight: 700;
+  color: gold;
+}
+
 .container .portfolio-item .portfolio-info .portfolio-content button:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
