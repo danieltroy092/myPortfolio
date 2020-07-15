@@ -606,6 +606,7 @@ select {
 
 .timeline.shadow-dark {
   position: absolute;
+  min-height: 347px;
 }
 
 .tabs ul {
@@ -672,6 +673,7 @@ select {
   border: 1px solid #dddddd;
   border-radius: 5px;
   padding: 20px;
+  min-height: 207px;
   position: relative;
 }
 
