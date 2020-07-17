@@ -180,3 +180,42 @@ function asideSectionTogglerBtn() {
     allSections[i].classList.toggle('open');
   }
 }
+
+// CONTACT FORM VALIDATION
+function validation() {
+  const name = document.getElementById('clientName').value;
+  const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
+  const msg = document.getElementById('message').value;
+  const errorMsg = document.getElementById('error-message');
+  let text;
+
+  errorMsg.style.padding = '10px';
+
+  if (name.length < 5) {
+    text = 'Please enter a valid name';
+    errorMsg.innerHTML = text;
+    return false;
+  }
+
+  if (email.indexOf('@') == -1 || email.length < 6) {
+    text = 'Please enter a valid email address';
+    errorMsg.innerHTML = text;
+    return false;
+  }
+
+  if (subject.length < 0) {
+    text = 'Please enter subject value';
+    errorMsg.innerHTML = text;
+    return false;
+  }
+
+  if (msg.length < 10) {
+    text = 'Please enter more than 10 characters';
+    errorMsg.innerHTML = text;
+    return false;
+  }
+
+  alert('Email successfully submited!');
+  return true;
+}

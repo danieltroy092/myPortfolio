@@ -549,17 +549,20 @@
                     <!--------- Contact form --------------->
                     <div class="row">
                         {{msg}}
-                        <form method="POST" action="send" class="contact-form padd-15">
+                        <div id="error-message"></div>
+                        <form method="POST" action="send" onsubmit="return validation()" class="contact-form padd-15">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="name" placeholder="Name*" />
+                                        <input type="text" class="form-control" name="name" placeholder="Name*"
+                                            id="clientName" />
                                     </div>
                                 </div>
 
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="email" placeholder="Email*" />
+                                        <input type="text" class="form-control" name="email" placeholder="Email*"
+                                            id="email" />
                                     </div>
                                 </div>
                             </div>
@@ -567,7 +570,8 @@
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" placeholder="Subject*" />
+                                        <input type="text" class="form-control" name="subject" placeholder="Subject*"
+                                            id="subject" />
                                     </div>
                                 </div>
                             </div>
@@ -575,7 +579,7 @@
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message"
+                                        <textarea class="form-control" id="message" name="message"
                                             placeholder="Type your message here..."></textarea>
                                     </div>
                                 </div>

@@ -27,6 +27,7 @@ body.dark .aside .nav li a.active,
   color: #72b626;
 }
 
+.contact #error-message,
 .tabs ul li:before,
 .about .about-content .timeline .circle-dot,
 .about .about-content .timeline .timeline-item::before,
