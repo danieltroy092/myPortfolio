@@ -192,25 +192,28 @@ function validation() {
 
   errorMsg.style.padding = '10px';
 
+  // name to have more than 5 characters
   if (name.length < 5) {
     text = 'Please enter a valid name';
     errorMsg.innerHTML = text;
     return false;
   }
 
+  // email needs to have @ symbol and character length of more than 6
   if (email.indexOf('@') == -1 || email.length < 6) {
     text = 'Please enter a valid email address';
     errorMsg.innerHTML = text;
     return false;
   }
 
+  // subject field needs to be filled in
   if (subject.length < 0) {
     text = 'Please enter subject value';
     errorMsg.innerHTML = text;
     return false;
   }
-
-  if (msg.length < 10) {
+  // message needs to be a minimum of 5 characters
+  if (msg.length <= 5) {
     text = 'Please enter more than 10 characters';
     errorMsg.innerHTML = text;
     return false;
