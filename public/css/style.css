@@ -934,6 +934,11 @@ select {
   height: 50px;
   padding: 0 50px;
 }
+
+.contact .contact-form textarea {
+  resize: none;
+}
+
 /******** DARK MODE *********/
 
 body.dark .home {
