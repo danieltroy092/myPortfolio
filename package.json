@@ -24,9 +24,9 @@
   "author": "Troy Ong",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
     "express-handlebars": "^4.0.4",
-    "nodemailer": "^6.4.6"
+    "nodemailer": "^6.9.6"
   }
 }
