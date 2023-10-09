@@ -1,0 +1,9 @@
+{
+  "name": "My Portfolio",
+  "description": "My Portfolio",
+  "repository": "https://github.com/danieltroy092/myPortfolio",
+  "keywords": ["node", "express", "static"],
+  "buildpacks": [
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#v170" }
+  ]
+}
